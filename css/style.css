@@ -1,0 +1,91 @@
+/*------------------
+    RESET
+--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug header > * {
+    height: 60px;
+    border: 1px solid;
+}
+
+body {
+    color: #7b7b7b;
+}
+
+/*------------------
+    BUTTONS
+--------------------*/
+button {
+    border: none;
+}
+.btn {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    color: #7b7b7b;
+    cursor: pointer;
+}
+.btn.btn-search {
+    width: 150px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.btn-account {
+    background-color: #53ae98;
+    color: #fff;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 5px;
+}
+/*------------------
+    HEADER
+--------------------*/
+header {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+
+header > * {
+    width: calc(100% / 3);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-nav ul li a {
+    display: inline-block;
+    padding: 0 30px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav li.active a {
+    color: #1172ed;
+}
+
+.account {
+    text-align: right;
+}

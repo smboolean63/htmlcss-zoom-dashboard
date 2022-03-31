@@ -21,6 +21,7 @@ body {
 --------------------*/
 button {
     border: none;
+    cursor: pointer;
 }
 .btn {
     width: 30px;
@@ -29,7 +30,6 @@ button {
     line-height: 30px;
     border-radius: 5px;
     color: #7b7b7b;
-    cursor: pointer;
 }
 .btn.btn-search {
     width: 150px;
@@ -45,6 +45,17 @@ button {
     line-height: 36px;
     text-align: center;
     border-radius: 5px;
+}
+
+.btn-action {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #1172ed;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 24px;
 }
 /*------------------
     HEADER
@@ -88,4 +99,53 @@ header > * {
 
 .account {
     text-align: right;
+}
+/*------------------
+    MAIN
+--------------------*/
+main {
+    height: calc(100vh - 60px);
+    display: flex;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.col-left, .col-right {
+    width: 50%;
+}
+
+.col-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.action {
+    width: calc(50% - 20px);
+    text-align: center;
+}
+
+.card {
+    border: 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-header {
+    background-color: #334a5f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.card-header-hour {
+    font-size: 22px;
+}
+
+.card-body {
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
